@@ -1,0 +1,10 @@
+node_modules
+.dist
+.DS_Store
+.vscode
+.env
+__pycache__
+*.pyc
+dist
+public/outcomes/*.csv
+public/outcomes/*.json

@@ -1,0 +1,6 @@
+- Grid: 5x5 (rows x cols)
+- Symbols: A, B, C, D (regular), W (wild), S (scatter)
+- Cluster pays: 4+ orthogonally adjacent matching symbols. W joins clusters.
+- Cascading: Winning symbols glitch out, columns collapse, new random symbols fill from top.
+- Free Spins: 3+ S in a grid trigger free spins (award set by outcome). In free spins, future outcomes can set higher multipliers and enable expanding wilds (visual placeholder).
+- Pick Bonus: outcome flag triggers pick-and-click UI overlay (placeholder).
