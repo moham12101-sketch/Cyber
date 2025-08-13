@@ -44,11 +44,8 @@ function createNeonButton(label: string, color: number, onClick: () => void): Co
     fontSize: 22,
     fill: color,
     letterSpacing: 2,
-    dropShadow: true,
-    dropShadowBlur: 8,
-    dropShadowDistance: 0,
-    dropShadowColor: '#00ffff'
-  });
+    dropShadow: { distance: 0, color: '#00ffff', blur: 8, alpha: 1 },
+  } as any);
   text.anchor.set(0.5);
   text.x = w / 2;
   text.y = h / 2;

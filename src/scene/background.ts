@@ -25,10 +25,7 @@ export function createBackground(app: Application, layer: Container): Background
     fontFamily: 'Share Tech Mono, monospace',
     fontSize: 16,
     fill: 0x00ffcc,
-    dropShadow: true,
-    dropShadowDistance: 0,
-    dropShadowColor: '#00ffff',
-    dropShadowBlur: 6,
+    dropShadow: { distance: 0, color: '#00ffff', blur: 6, alpha: 1 },
   });
 
   interface RainBit { text: Text; speed: number; }

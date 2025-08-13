@@ -17,11 +17,8 @@ export function createSymbol(initial: SymbolCode) {
     fontFamily: 'Orbitron, Share Tech Mono',
     fontSize: 36,
     fill: 0x00ffcc,
-    dropShadow: true,
-    dropShadowBlur: 12,
-    dropShadowDistance: 0,
-    dropShadowColor: '#00ffff'
-  });
+    dropShadow: { distance: 0, color: '#00ffff', blur: 12, alpha: 1 },
+  } as any);
   text.anchor.set(0.5);
   container.addChild(text);
 
@@ -32,7 +29,7 @@ export function createSymbol(initial: SymbolCode) {
     bg.circle(0, 0, 44).fill({ color: 0x051017, alpha: 0.9 }).stroke({ width: 2, color, alpha: 0.7 });
     glow.clear();
     glow.circle(0, 0, 50).stroke({ width: 10, color, alpha: 0.2 });
-    text.style.fill = color;
+    (text.style as any).fill = color;
   }
 
   setSymbol(initial);
