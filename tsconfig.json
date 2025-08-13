@@ -16,7 +16,8 @@
       "@/game/*": ["src/game/*"],
       "@/ui/*": ["src/ui/*"],
       "@/effects/*": ["src/effects/*"],
-      "@/audio/*": ["src/audio/*"]
+      "@/audio/*": ["src/audio/*"],
+      "@/scene/*": ["src/scene/*"]
     }
   },
   "include": ["src"]
